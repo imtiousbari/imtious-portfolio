@@ -27,6 +27,7 @@ export const Skills = () => {
       items: 1
     }
   };
+ 
 
   return (
     <section className="skill" id="skills">
@@ -36,7 +37,7 @@ export const Skills = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} showDots={true} className="owl-carousel owl-theme skill-slider itemstyle ">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Web Development</h5>
@@ -58,7 +59,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
+        <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }

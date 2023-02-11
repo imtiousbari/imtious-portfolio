@@ -7,6 +7,25 @@ import TrackVisibility from 'react-on-screen';
 // import { Skills } from "../components/Skills";
 
 export const Banner = () => {
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     // the naming can be any, depends on you.
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 5
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 3
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 2
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1
+  //   }
+  // };
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -52,7 +71,7 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         
-        <Row className="aligh-items-center">
+        <Row className="aligh-items-center  ">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
@@ -69,10 +88,13 @@ export const Banner = () => {
               </div>}
             </TrackVisibility>
           </Col>
-          {/* <Col xs={12} md={6} xl={7}> */}
+          {/* <Col xs={24} md={6} xl={7}> */}
           <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                // <div className={isVisible ? 
+                // "animate__animated animate__zoomIn" : ""}
+                // >
+                  <div>
                 <img  classname="bannerimgg" src={headerImg} alt="Header Img"/>
                 </div>}
                 </TrackVisibility>
