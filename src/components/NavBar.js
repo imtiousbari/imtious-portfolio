@@ -37,9 +37,10 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img className="mobilelogo"
+            <img 
+            // className="mobilelogo"
             
-            // style={{"minwidth" : "150px"}} 
+            style={{"minwidth" : "150px"}} 
             src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
