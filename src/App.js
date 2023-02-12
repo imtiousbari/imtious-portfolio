@@ -7,6 +7,7 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Emailjs } from "./components/Emailjs";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
+      <Emailjs />
       <Footer />
     </div>
   );

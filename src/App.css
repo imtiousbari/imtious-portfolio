@@ -99,6 +99,15 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
+@media (max-width: 480px) {
+
+  .navbar {
+
+    width: 100px !important;
+    display: none !important;
+
+  }
+}
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #0B0924;
@@ -303,22 +312,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .mobilelogo {
 
-    width: 150px !important;
+    width: 100px !important;
+    display: none !important;
 
   }
 }
 
 
-
 /************ Banner Css ************/
 .banner {
   margin-top: 100px;
-  padding: 160px 0 100px 0;
-  /* background-image: url('./assets/img/header-img.svg'); */
-  background-position: top center;
-  background-size: cover;
+  padding: 160px 0 190px 0;
+  background-image: url('./assets/img/header-img.svg');
+  background-position: right center;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   width: 100%;
+  background-position-x: 645px;
+  background-position-y: 15px;
+
+}
+
+@media (max-width: 480px) {
+
+  .banner {
+
+    padding: 12px 0 190px 0;
+    background-size: cover;
+    background-position-x: -410px;
+    background-position-y: 246px;
+
+  }
 }
 .banner .tagline {
   font-weight: 700;
@@ -370,6 +394,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-left: 404px;
   margin-top: -431px;
 }
+@media (max-width: 480px) {
+
+  .banner img {
+
+    padding-left: 58px !important;
+    margin-top: -150px !important;
+
+  }
+}
+/* //padding-left: 58px;
+margin-top: -150px; */
 /* .bannerimgg{
   padding-left: 404px;
   margin-top: -431px;
@@ -616,7 +651,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 .contact {
   /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
-  padding: 60px 0 200px 0;
+  padding: 60px 0 72px 0;
 }
 .contact img {
   width: 92%;
