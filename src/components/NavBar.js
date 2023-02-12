@@ -5,6 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import  iconsgithub  from "../assets/img/iconsgithub.svg";
+import  mail  from "../assets/img/mail.svg";
 import { HashLink } from 'react-router-hash-link';
 // import { Emailjs } from "./Emailjs";
 import {
@@ -60,6 +61,7 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/mdimtiousbari" target="_blank"><img src={navIcon1} alt="" /></a>
                 <a href="https://www.facebook.com/imtious"  target="_blank"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/imtious_" target="_blank"><img src={navIcon3} alt="" /></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=mdimtiousbari@gmail.com&body=Hello%20Imtious," target="_blank"><img src={mail} alt="" /></a>
               </div>
               {/* <HashLink to='#connect'> */}
               <HashLink to='#sendemail'>
