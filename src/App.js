@@ -21,7 +21,12 @@ function App() {
       {/* <Contact /> */}
       <Emailjs />
       <Footer />
-      {/* <Route exact path="/sendmail" component={Emailjs} /> */}
+      {/* <Route exact path="/navbar" component={NavBar} />
+      <Route exact path="/banner" component={Banner} />
+      <Route exact path="/skills" component={Skills} />
+      <Route exact path="/connectme" component={Emailjs} />
+      <Route exact path="/footer" component={Footer} /> */}
+      {/* <Route exact path="/navbar" component={NavBar} /> */}
     </div>
   );
 }

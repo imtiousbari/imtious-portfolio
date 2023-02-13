@@ -23,6 +23,13 @@ export const Banner = () => {
   // const handleClick = () => {
   //   history.push('/sendmail');
   // };
+  const handleClickScroll = () => {
+    const element = document.getElementById('sendemail');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -91,9 +98,13 @@ export const Banner = () => {
                     type specimen book.
                   </p>
 
-                  <button onClick={() => console.log("connect")}>
+                  <button onClick={handleClickScroll
+                    // () => console.log("connect")
+                  }
+                    >
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
+                  
                   {/* <HashLink to="#sendemail">
                     <button className="">
                       <span>Let’s Connect</span>
