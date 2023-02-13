@@ -72,7 +72,7 @@ export const Emailjs = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div className={isVisible ? "" : ""}>
+                <div className={isVisible ? "" : ""} style={{padding:'30px'}}>
                   <h2>Get In Touch</h2>
                   <form ref={form} onSubmit={sendEmail}>
                     <Row>
