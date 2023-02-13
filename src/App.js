@@ -8,6 +8,8 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Emailjs } from "./components/Emailjs";
+// import { Route } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
       {/* <Contact /> */}
       <Emailjs />
       <Footer />
+      {/* <Route exact path="/sendmail" component={Emailjs} /> */}
     </div>
   );
 }

@@ -321,7 +321,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 100px;
+  margin-top: 180px;
   padding: 160px 0 190px 0;
   background-image: url('./assets/img/header-img.svg');
   background-position: right center;
@@ -427,9 +427,18 @@ margin-top: -150px; */
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 155px 0 50px 0;
   position: relative;
 }
+@media (max-width: 480px) {
+
+  .skill {
+
+    padding: 14px 0 50px 0;
+
+  }
+}
+
 .skill-bx {
   /* background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% ); */
    /* background: #151515; */
