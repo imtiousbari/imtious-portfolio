@@ -17,7 +17,7 @@ export const Emailjs = () => {
     message_body: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText, setButtonText] = useState("Send Message");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -43,7 +43,7 @@ export const Emailjs = () => {
         (result) => {
           console.log(result.text);
           if (result.text === "OK") {
-            setButtonText("Send");
+            setButtonText("Send Message");
             setFormDetails(formInitialDetails);
             // alert('Message sent')
           }
@@ -56,7 +56,9 @@ export const Emailjs = () => {
 
   return (
     <section className="contact" id="sendemail">
+      
       <Container>
+      
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
@@ -68,6 +70,9 @@ export const Emailjs = () => {
                 />
               )}
             </TrackVisibility>
+            <div>
+              hello
+            </div>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>

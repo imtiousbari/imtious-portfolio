@@ -9,7 +9,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Emailjs } from "./components/Emailjs";
 // import { Route } from 'react-router-dom';
-
+// import "react-circular-progressbar/dist/styles.css";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
+      
       <Projects />
       {/* <Contact /> */}
       <Emailjs />

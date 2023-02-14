@@ -470,9 +470,18 @@ margin-top: -150px; */
   margin: 0 auto 15px auto;
   
 }
-/* .itemstyle{
-  margin-bottom: 30px;
-} */
+.experience{
+  font-size: 45px;
+	font-weight: 700;
+  margin-top: 50px;
+
+}
+
+
+text.CircularProgressbar-text{
+  x: 25 !important ;
+  y: 55 !important;
+}
 .react-multi-carousel-item{
   margin-bottom: 30px;
 }
