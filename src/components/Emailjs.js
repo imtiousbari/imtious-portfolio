@@ -3,12 +3,14 @@ import emailjs from "@emailjs/browser";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import contactImg from "../assets/img/contact-img.svg";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
+import iconswhatsapp from "../assets/img/iconswhatsapp.svg";
+import iconsgmail from "../assets/img/iconsgmail.svg";
 
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 export const Emailjs = () => {
-  const notify = () => toast("Message Sent Suceesfuly!",{theme:'dark'});
+  // const notify = () => toast("",{theme:'dark'});
   const formInitialDetails = {
     first_name: "",
     last_name: "",
@@ -19,6 +21,8 @@ export const Emailjs = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send Message");
   const [status, setStatus] = useState({});
+  // const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -31,6 +35,14 @@ export const Emailjs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
+    // if (!email) {
+    //   // Required fields are missing, do not submit the form
+    //   toast.error("Please fill in all required fields.");
+    // } else {
+    //   // Required fields are filled, submit the form
+    //   toast.success("Form submitted!");
+    //   // You can add your form submission logic here
+    // }
 
     emailjs
       .sendForm(
@@ -46,19 +58,22 @@ export const Emailjs = () => {
             setButtonText("Send Message");
             setFormDetails(formInitialDetails);
             // alert('Message sent')
+            toast.success("Message Sent Sucessfully", { theme: "dark" });
+          } else {
+            toast.error("Please fill in all required fields.");
           }
         },
         (error) => {
           console.log(error.text);
+          toast.error("Please fill in all required fields.");
         }
       );
   };
 
   return (
     <section className="contact" id="sendemail">
-      
       <Container>
-      
+      {/* <h2></h2> */}
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
@@ -70,15 +85,34 @@ export const Emailjs = () => {
                 />
               )}
             </TrackVisibility>
-            <div>
-              hello
+            <div className="contactm">
+              
+              <img className="conticons" src={iconswhatsapp} alt="" />
+              <p className="contxt">+880 1685298560</p>
+              
+              <img className="conticons" src={iconsgmail} alt="" style={{marginLeft:20}} />
+              <p className="contxt">mdimtiousbari@gmail.com</p>
+        
             </div>
           </Col>
+          {/* <div className="contactm">
+              
+              <img className="conticons" src={iconswhatsapp} alt="" />
+              <p className="contxt">+880 1685298560</p>
+              
+              <img className="conticons" src={iconsgmail} alt="" style={{marginLeft:20}} />
+              <p className="contxt">mdimtiousbari@gmail.com</p>
+        
+            </div> */}
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div className={isVisible ? "" : ""} style={{padding:'30px'}}>
+                <div
+                  className={isVisible ? "" : ""}
+                  style={{ padding: "30px" }}
+                >
                   <h2>Get In Touch</h2>
+                  <p>lorem</p>
                   <form ref={form} onSubmit={sendEmail}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -109,6 +143,7 @@ export const Emailjs = () => {
                           name="email"
                           value={formDetails.email}
                           placeholder="Email Address"
+                          required
                           onChange={(e) =>
                             onFormUpdate("email", e.target.value)
                           }
@@ -120,6 +155,7 @@ export const Emailjs = () => {
                           name="phone_number"
                           value={formDetails.phone_number}
                           placeholder="Phone No."
+                          required
                           onChange={(e) =>
                             onFormUpdate("phone_number", e.target.value)
                           }
@@ -135,7 +171,10 @@ export const Emailjs = () => {
                             onFormUpdate("message_body", e.target.value)
                           }
                         ></textarea>
-                        <button type="submit" onClick={notify}>
+                        <button
+                          type="submit"
+                          //  onClick={notify}
+                        >
                           <span>{buttonText}</span>
                         </button>
                         <ToastContainer />
@@ -147,6 +186,7 @@ export const Emailjs = () => {
             </TrackVisibility>
           </Col>
         </Row>
+        {/* </form> */}
       </Container>
     </section>
     // <form ref={form} onSubmit={sendEmail}>

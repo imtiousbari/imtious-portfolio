@@ -1,10 +1,10 @@
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 import { Container, Row, Col } from "react-bootstrap";
+import reacticon from "../assets/img/reacticon.svg";
 
-import {CircleProgress} from 'react-gradient-progress'
+import { CircleProgress } from "react-gradient-progress";
 
 export const Skills = () => {
   const responsive = {
@@ -50,89 +50,192 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider itemstyle "
               >
                 <div className="item">
-                <CircleProgress percentage={70} strokeWidth={18} primaryColor= {[ '#8B34B4', '#615EDC']} secondaryColor="" fontSize="20px" 	 />
-                <h5>Web Development</h5>
+                  <CircleProgress
+                    percentage={70}
+                    strokeWidth={18}
+                    primaryColor={["#8B34B4", "#615EDC"]}
+                    secondaryColor=""
+                    fontSize="20px"
+                  />
+                  <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                <CircleProgress percentage={70} strokeWidth={18} primaryColor= {[ '#8B34B4', '#615EDC']} secondaryColor="" fontSize="20px" 	 />
-                <h5>Web Development</h5>
+                  <CircleProgress
+                    percentage={70}
+                    strokeWidth={18}
+                    primaryColor={["#8B34B4", "#615EDC"]}
+                    secondaryColor=""
+                    fontSize="20px"
+                  />
+                  <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                <CircleProgress percentage={100} strokeWidth={18} primaryColor= {[ '#8B34B4', '#615EDC']} secondaryColor="" fontSize="20px" 	 />
-                <h5>Web Development</h5>
+                  <CircleProgress
+                    percentage={100}
+                    strokeWidth={18}
+                    primaryColor={["#8B34B4", "#615EDC"]}
+                    secondaryColor=""
+                    fontSize="20px"
+                  />
+                  <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                <CircleProgress percentage={70} strokeWidth={18} primaryColor= {[ '#8B34B4', '#615EDC']} secondaryColor="" fontSize="20px" 	 />
-                <h5>Web Development</h5>
+                  <CircleProgress
+                    percentage={70}
+                    strokeWidth={18}
+                    primaryColor={["#8B34B4", "#615EDC"]}
+                    secondaryColor=""
+                    fontSize="20px"
+                  />
+                  <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                <CircleProgress percentage={70} strokeWidth={18} primaryColor= {[ '#8B34B4', '#615EDC']} secondaryColor="" fontSize="20px" 	 />
-                <h5>Web Development</h5>
+                  <CircleProgress
+                    percentage={70}
+                    strokeWidth={18}
+                    primaryColor={["#8B34B4", "#615EDC"]}
+                    secondaryColor=""
+                    fontSize="20px"
+                  />
+                  <h5>Web Development</h5>
                 </div>
               </Carousel>
 
               <div className="experience">
-                <h2>
-                  Languages
-                </h2>
-                <p>
-                  lorem
-                </p>
-                  <div>
-                    <Row>
-
-                        <Col size={3} sm={3} className="px-1">
+                <h2>Languages</h2>
+                <p>lorem</p>
+                <div>
+                  <Row>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    {/* </Row>  
+                      <Row> */}
+                    {/* <Col size={12}  className="px-1">
                           <div className="card" >
                             React
                           </div>
                         </Col>
-                        <Col size={3} sm={3} className="px-1">
+                        <Col size={12}  className="px-1">
                           <div className="card" >
                             React
                           </div>
                         </Col>
-                        <Col size={3} sm={3} className="px-1">
+                        <Col size={12}  className="px-1">
                           <div className="card" >
                             React
                           </div>
                         </Col>
-                        <Col size={3} sm={3} className="px-1">
+                        <Col size={12}  className="px-1">
                           <div className="card" >
                             React
                           </div>
-                        </Col>
-                    </Row>  
-                      <Row>
-                      <Col size={3} sm={3} className="px-1">
-                          <div className="card" >
-                            React
-                          </div>
-                        </Col>
-                        <Col size={3} sm={3} className="px-1">
-                          <div className="card" >
-                            React
-                          </div>
-                        </Col>
-                        <Col size={3} sm={3} className="px-1">
-                          <div className="card" >
-                            React
-                          </div>
-                        </Col>
-                        <Col size={3} sm={3} className="px-1">
-                          <div className="card" >
-                            React
-                          </div>
-                        </Col>
-                        
-                      </Row>    
-
-                  </div>
-
+                        </Col> */}
+                  </Row>
+                </div>
               </div>
-                
-          </div>                           
+            </div>
           </div>
         </div>
+        <div className="experiences">
+                <h2>Languages</h2>
+                <p>lorem</p>
+                <div>
+                  <Row>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <div className="card stcard">
+                        <img className="langicons" src={reacticon} alt="" />
+                        <p className="card-text">React</p>
+                      </div>
+                    </Col>
+                    {/* </Row>  
+                      <Row> */}
+                    {/* <Col size={12}  className="px-1">
+                          <div className="card" >
+                            React
+                          </div>
+                        </Col>
+                        <Col size={12}  className="px-1">
+                          <div className="card" >
+                            React
+                          </div>
+                        </Col>
+                        <Col size={12}  className="px-1">
+                          <div className="card" >
+                            React
+                          </div>
+                        </Col>
+                        <Col size={12}  className="px-1">
+                          <div className="card" >
+                            React
+                          </div>
+                        </Col> */}
+                  </Row>
+                </div>
+              </div>
       </div>
       <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
