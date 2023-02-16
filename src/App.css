@@ -813,10 +813,11 @@ text.CircularProgressbar-text {
 }
 .contactm{
   display: flex !important;
-    flex-direction: row !important;
-    /* margin: 50px !important; */
-    margin: 20px !important;
-    margin-top: 25px !important;
+  flex-direction: row !important;
+  /* margin: 50px !important; */
+  margin: 20px !important;
+  margin-top: 45px !important;
+  margin-left: 80px !important;
 }
 @media (max-width: 480px) {
   .contactm {
