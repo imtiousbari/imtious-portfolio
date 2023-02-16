@@ -438,7 +438,7 @@ margin-top: -150px; */
     rgba(30, 2, 83, 1) 44.2%,
     rgb(82, 31, 68) 138.2%
   );
-  border-radius: 64px;
+  border-radius: 15px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
@@ -580,7 +580,7 @@ text.CircularProgressbar-text {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 100%;
 }
 .project .nav.nav-pills {
   width: 72%;
@@ -699,6 +699,7 @@ text.CircularProgressbar-text {
 @media (max-width: 480px) {
   .contact img{
     /* width: 92% !important; */
+    margin-left: 18px;
   }
 }
 .contact h2 {
@@ -811,13 +812,15 @@ text.CircularProgressbar-text {
   }
 }
 .contactm{
-  display: flex;
-    flex-direction: row;
-    margin: 50px;
+  display: flex !important;
+    flex-direction: row !important;
+    /* margin: 50px !important; */
+    margin: 20px !important;
+    margin-top: 25px !important;
 }
 @media (max-width: 480px) {
   .contactm {
-    margin: 25px;
+    margin: 25px !important;
   }
 }
 .conticons{
@@ -943,3 +946,4 @@ text.CircularProgressbar-text {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+/* For Tablet */
